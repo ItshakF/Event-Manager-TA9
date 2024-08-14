@@ -2,26 +2,24 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.3.
 
+## Build process
+
+Run npm install to install packages and dependencies
+
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Run `npm start` for a dev server. The application will automatically open.
 
-## Code scaffolding
+## Node.js
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Version 18.20.4 was used
 
-## Build
+## Status
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+The project is almost finished, about all the point only the choose pagination is missing. I also included a sorting by name as seens on the UI.
 
-## Running unit tests
+## Assumptions
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- Approximatly be close to the UI design
+- URL go was of no use the did not implement it
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.

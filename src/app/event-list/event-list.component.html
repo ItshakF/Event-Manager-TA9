@@ -1,0 +1,71 @@
+<div class="parent">
+  <div class="side-panel child" *ngIf="isCreating">
+    <app-event-form (close)="isCreating = false" [item]="selectedEvent" (itemCreated)="onItemCreated($event)"></app-event-form>
+  </div>
+</div>
+
+<div class="container top-navbar">
+  <div class="title">Management tool</div>
+  <div class="icons-container">
+    <i class="icon medium-icon pi pi-microsoft" (click)="toggleView('tiles')"></i>
+    <i class="icon medium-icon pi pi-bars" (click)="toggleView('list')"></i>
+    <i class="icon big-icon pi pi-plus-circle" (click)="openForm()"></i>
+  </div>
+</div>
+
+<div class="container card">
+  <div class="p-inputgroup search-bar">
+    <span class="p-inputgroup-addon"><i class="pi pi-search"></i></span>
+    <input
+      type="text"
+      pInputText
+      placeholder="Find by name..."
+      [(ngModel)]="searchTerm"
+      (input)="filterItems()"
+    />
+  </div>
+  <p-table [value]="pagedEvents" [tableStyle]="{ 'min-width': '60rem' }" *ngIf="isListView; else cardView">
+    <ng-template pTemplate="header">
+      <tr class="table-display">
+        <th class="col-content small-column">Color</th>
+        <th pSortableColumn="name" class="col-content big-column">Name</th>
+        <th class="col-content medium-column">Create Date</th>
+        <th class="col-content medium-column">Last Update</th>
+        <th class="col-content medium-column">Created By</th>
+      </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-event>
+      <tr class="table-display custom-row" (click)="openForm(event)">
+        <td class="col-content small-column">
+          <div [style.background-color]="event.color" class="color-box"></div>
+        </td>
+        <td class="col-content big-column">{{ event.name }}</td>
+        <td class="col-content medium-column">
+          {{ event.createdDate | date : "dd/MM/yyyy" }}
+        </td>
+        <td class="col-content medium-column">
+          {{ event.lastUpdate | date : "dd/MM/yyyy" }}
+        </td>
+        <td class="col-content medium-column">{{ event.createdBy }}</td>
+      </tr>
+    </ng-template>
+  </p-table>
+
+  <ng-template #cardView>
+    <div class="card-container">
+      <div *ngFor="let item of pagedEvents" class="item-card" (click)="openForm(item)">
+        <div [style.background-color]="item.color" class="big-color-box"></div>
+        <span class="grey-font">{{item.name}}</span>
+      </div>
+    </div>
+  </ng-template>
+</div>
+
+<div class="container">
+  <p-paginator
+    [rows]="10"
+    [totalRecords]="filteredEvents.length"
+    (onPageChange)="paginate($event)"
+  ></p-paginator>
+</div>
+

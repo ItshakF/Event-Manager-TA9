@@ -1,0 +1,146 @@
+[
+  {
+    "id": 1,
+    "color": "#33FFF5",
+    "name": "Event 1",
+    "createdDate": "2022-07-30",
+    "lastUpdate": "2024-05-15",
+    "createdBy": "User 1"
+  },
+  {
+    "id": 2,
+    "color": "#3357FF",
+    "name": "Event 2",
+    "createdDate": "2022-10-25",
+    "lastUpdate": "2024-04-06",
+    "createdBy": "User 2"
+  },
+  {
+    "id": 3,
+    "color": "#A133FF",
+    "name": "Event 3",
+    "createdDate": "2023-06-24",
+    "lastUpdate": "2023-10-08",
+    "createdBy": "User 4"
+  },
+  {
+    "id": 4,
+    "color": "#FF8333",
+    "name": "Event 4",
+    "createdDate": "2023-01-16",
+    "lastUpdate": "2022-10-20",
+    "createdBy": "User 3"
+  },
+  {
+    "id": 5,
+    "color": "#FF5733",
+    "name": "Event 5",
+    "createdDate": "2024-05-06",
+    "lastUpdate": "2023-08-09",
+    "createdBy": "User 4"
+  },
+  {
+    "id": 6,
+    "color": "#A133FF",
+    "name": "Event 6",
+    "createdDate": "2022-03-14",
+    "lastUpdate": "2024-07-02",
+    "createdBy": "User 4"
+  },
+  {
+    "id": 7,
+    "color": "#33FF57",
+    "name": "Event 7",
+    "createdDate": "2021-11-14",
+    "lastUpdate": "2021-12-09",
+    "createdBy": "User 2"
+  },
+  {
+    "id": 8,
+    "color": "#3357FF",
+    "name": "Event 8",
+    "createdDate": "2024-05-26",
+    "lastUpdate": "2022-11-28",
+    "createdBy": "User 3"
+  },
+  {
+    "id": 9,
+    "color": "#FF33A1",
+    "name": "Event 9",
+    "createdDate": "2022-06-04",
+    "lastUpdate": "2023-07-09",
+    "createdBy": "User 2"
+  },
+  {
+    "id": 10,
+    "color": "#33FF57",
+    "name": "Event 10",
+    "createdDate": "2022-06-01",
+    "lastUpdate": "2022-03-17",
+    "createdBy": "User 2"
+  },
+  {
+    "id": 11,
+    "color": "#33FF57",
+    "name": "Event 11",
+    "createdDate": "2024-06-04",
+    "lastUpdate": "2022-09-24",
+    "createdBy": "User 3"
+  },
+  {
+    "id": 12,
+    "color": "#33FF57",
+    "name": "Event 12",
+    "createdDate": "2024-02-10",
+    "lastUpdate": "2024-07-21",
+    "createdBy": "User 4"
+  },
+  {
+    "id": 13,
+    "color": "#33FFF5",
+    "name": "Event 13",
+    "createdDate": "2023-04-21",
+    "lastUpdate": "2023-07-23",
+    "createdBy": "User 2"
+  },
+  {
+    "id": 14,
+    "color": "#FF33A1",
+    "name": "Event 14",
+    "createdDate": "2023-07-04",
+    "lastUpdate": "2024-06-14",
+    "createdBy": "User 5"
+  },
+  {
+    "id": 15,
+    "color": "#33FF57",
+    "name": "Event 15",
+    "createdDate": "2022-01-20",
+    "lastUpdate": "2023-10-10",
+    "createdBy": "User 2"
+  },
+  {
+    "id": 16,
+    "color": "#A133FF",
+    "name": "Event 16",
+    "createdDate": "2023-10-14",
+    "lastUpdate": "2021-11-29",
+    "createdBy": "User 5"
+  },
+  {
+    "id": 17,
+    "color": "#3357FF",
+    "name": "Event 17",
+    "createdDate": "2023-01-27",
+    "lastUpdate": "2024-07-08",
+    "createdBy": "User 4"
+  },
+  {
+    "id": 18,
+    "color": "#FF5733",
+    "name": "Event 18",
+    "createdDate": "2023-09-01",
+    "lastUpdate": "2023-10-10",
+    "createdBy": "User 4"
+  }
+]

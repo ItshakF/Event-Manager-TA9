@@ -1,0 +1,38 @@
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  margin-bottom: 2%;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+}
+
+label {
+  margin-bottom: 2%;
+  margin-left: 2%;
+}
+
+input {
+  width: 90%;
+}
+
+textarea {
+  width: 95%;
+}
+
+input, textarea {
+  margin-bottom: 15px;
+  padding: 8px;
+  font-size: 16px;
+  margin: auto;
+}
+
+.submit-button{
+  margin: auto;
+}
+

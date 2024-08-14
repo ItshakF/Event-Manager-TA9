@@ -1,0 +1,29 @@
+<div class="item-form">
+  <h2>{{ item.name ? 'Edit Event' : 'Create New' }}</h2>
+  <button (click)="closeForm()">Close</button>
+  <form #eventForm="ngForm">
+    <label>Name</label>
+    <div class="container row">
+      <input
+        [(ngModel)]="item.createdBy"
+        name="createdBy"
+        type="text"
+        placeholder="Type tag name..."
+        required
+      />
+      <p-colorPicker [(ngModel)]="item.color" name="color"></p-colorPicker>
+    </div>
+
+    <label>Tag Description</label>
+    <textarea
+      [(ngModel)]="item.name"
+      name="name"
+      placeholder="Type tag description..."
+      required
+      class="container"
+    ></textarea>
+
+    <p-button (onClick)="onSubmit()" class="submit-button" label="Submit" [disabled]="!eventForm.form.valid"></p-button>
+  </form>
+</div>
+
